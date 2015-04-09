@@ -17,6 +17,21 @@ var score = function(input) {
   /* setting output to also have || 0 means if something in the input is not found
      in the object 'letters' it will just add 0, effectively ignoring it.
   */
-  
+
   return output;
 };
+
+$(document).ready(function() {
+
+  $('form#input').submit(function(event) {
+    var input = $('input#word').val();
+    var result = score(input);
+
+    $("#entry").text(input);
+    $("#score").text(result);
+
+    $('#result').show();
+    event.preventDefault();
+
+  });
+});
