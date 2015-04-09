@@ -1,0 +1,28 @@
+<html>
+  <head>
+  <title>Scrabble Score</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <script src="js/jquery-1.11.2.js"></script>
+    <script src="js/scripts.js"></script>
+  </head>
+  <body>
+    <div class="container">
+
+        <h3>Scrabble Score</h3>
+
+        <form id="input">
+          <div class="form-group">
+            <label for="word">Enter a word to find the Scrabble score for:</label>
+            <input type="text" name="word" id="word" class="form-control">
+          </div>
+          <button type="submit" class="btn btn-info">Score</button>
+        </form>
+
+        <div id="result">
+          <h4>The Scrabble Score of <span id="word"></span> is: <span id="score" class="text-danger"></span></h4>
+        </div>
+
+    </div>
+  </body>
+</html>
